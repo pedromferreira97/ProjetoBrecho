@@ -8,6 +8,14 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class IndexPage implements OnInit {
   public index!: string;
+
+  public appPages = [
+    { title: 'Página Inicial', url: '/page/index', icon: 'mail' },    
+    { title: 'Brechós', url: '/page/produtos', icon: 'heart' },
+    { title: 'Quem Somos', url: '/page/sobre', icon: 'paper-plane' }
+  ];
+  
+  public labels = ['Família', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   
   constructor(private activatedRoute: ActivatedRoute) { }
 

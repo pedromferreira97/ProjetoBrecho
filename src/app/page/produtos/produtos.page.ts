@@ -7,13 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProdutosPage implements OnInit {
   public appPages = [
-    { title: 'Página Inicial', url: '/page/index', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
-    { title: ''}
+    { title: 'Página Inicial', url: '/page/index', icon: 'mail' },    
+    { title: 'Brechós', url: '/page/produtos', icon: 'heart' },
+    { title: 'Quem Somos', url: '/page/sobre', icon: 'paper-plane' }
   ];
   public labels = ['Família', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() { }
