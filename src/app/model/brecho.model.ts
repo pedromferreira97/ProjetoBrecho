@@ -3,4 +3,5 @@ export interface Brecho {
     nome: string;
     endereco: string;
     moda: string;
+    favorito: boolean;
 }

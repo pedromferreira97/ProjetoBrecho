@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+    <ion-menu-button slot="start"></ion-menu-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #form="ngForm"><br>
+    <ion-item>
+      <ion-label>E-mail: </ion-label>
+      <ion-input type="text" name="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Senha: </ion-label>
+      <ion-input type="password" name="senha"></ion-input>
+    </ion-item><br>
+    <ion-button type="submit" color="secondary" expand="block">Entrar</ion-button><br>
+    <ion-button type="submit" color="success" expand="block" (click)="novoCadastro()">Criar nova conta</ion-button>
+  </form>
+</ion-content>

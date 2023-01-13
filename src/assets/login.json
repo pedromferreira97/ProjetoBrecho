@@ -1,0 +1,20 @@
+{
+    "pessoa": [
+        {
+            "id": "1",
+            "cpf": "",
+            "nome": "Luisa",
+            "email": "luisanunes@hotmail.com",
+            "senha": "Moda Feminina/Moda Plus-size",
+            "perfil": ""
+        },
+        {
+            "id": "2",
+            "cpf": "",
+            "nome": "Julia",
+            "email": "luisanunes@hotmail.com",
+            "senha": "Moda Feminina/Moda Plus-size",
+            "perfil": ""
+        }
+    ]
+}
