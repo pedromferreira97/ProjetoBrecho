@@ -3,8 +3,8 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header *ngFor="let pe of pessoas, let i = index">Olá, {{ pe.nome }}</ion-list-header>
-          <ion-note *ngFor="let pe of pessoas, let i = index">{{ pe.email }}</ion-note>
+          <ion-list-header *ngFor="let pe of pessoas">Olá, {{ pe.nome }}</ion-list-header>
+          <ion-note *ngFor="let pe of pessoas">{{ pe.email }}</ion-note>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">

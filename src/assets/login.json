@@ -1,20 +1,36 @@
 {
-    "pessoa": [
-        {
-            "id": "1",
-            "cpf": "",
-            "nome": "Luisa",
-            "email": "luisanunes@hotmail.com",
-            "senha": "Moda Feminina/Moda Plus-size",
-            "perfil": ""
-        },
-        {
-            "id": "2",
-            "cpf": "",
-            "nome": "Julia",
-            "email": "luisanunes@hotmail.com",
-            "senha": "Moda Feminina/Moda Plus-size",
-            "perfil": ""
-        }
-    ]
+  "pessoa": [
+    {
+      "id": "1",
+      "cpf": "",
+      "nome": "Luisa",
+      "email": "luisanunes@hotmail.com",
+      "senha": "Moda Feminina/Moda Plus-size",
+      "perfil": ""
+    },
+    {
+      "id": "2",
+      "cpf": "",
+      "nome": "Julia",
+      "email": "luisanunes@hotmail.com",
+      "senha": "Moda Feminina/Moda Plus-size",
+      "perfil": ""
+    },
+    {
+      "cpf": "123.123.123-12",
+      "nome": "Pedro",
+      "email": "pedromarins@hotmail.com",
+      "senha": "203945",
+      "perfil": "Cliente",
+      "id": "EtVWgTH"
+    },
+    {
+      "cpf": "345.678.910.11",
+      "nome": "Luisa",
+      "email": "lulu@gmail.com",
+      "senha": "123456",
+      "perfil": "Admin",
+      "id": "JWjBWKq"
+    }
+  ]
 }
