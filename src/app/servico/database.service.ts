@@ -37,7 +37,7 @@ export class DatabaseService {
    
    //Métodos referentes aos Brechós
    getLoja() {
-    return this.http.get<Pessoa[]>(this.APIPessoa);
+    return this.http.get<Brecho[]>(this.APILoja);
    }
    getLojaUnica(id: Number){
     return this.http.get<Brecho>(this.APILoja + id);

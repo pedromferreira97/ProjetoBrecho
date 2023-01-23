@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { Pessoa } from 'src/app/model/pessoa.model';
 import { DatabaseService } from 'src/app/servico/database.service';
@@ -29,13 +29,13 @@ export class LoginPage implements OnInit {
     { title: 'Login', url: '/login/login', icon: 'heart' }
 
   ];
-  public labels = ['Família', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   
   constructor(private activatedRoute: ActivatedRoute,
     private datab: DatabaseService,
     private alert: AlertController,
     private util: UtilityService,
-    private formBuilder: FormBuilder) {}
+    private formBuilder: FormBuilder,
+    private router: Router) {}
   
   ngOnInit(): void {
     this.index = this.activatedRoute.snapshot.paramMap.get('id') as string;
@@ -73,7 +73,7 @@ export class LoginPage implements OnInit {
         },
         {
           name: 'perfil',
-          type: 'radio',
+          type: 'text',
           placeholder: 'Perfil'
         },
 
@@ -108,5 +108,14 @@ export class LoginPage implements OnInit {
 
 cadastroPessoa(pessoa: any){
   this.datab.postPessoa(pessoa);
+}
+
+loginPessoa(pessoa: any){
+  this.datab.getPessoaUnica(pessoa);
+  if (pessoa.perfil == "Cliente") {
+    this.router.navigate(['/cliente/cliente']);
+  } else {
+    this.router.navigate(['/admin/admin']);
+  }
 }
 }

@@ -31,6 +31,22 @@
       "senha": "123456",
       "perfil": "Admin",
       "id": "JWjBWKq"
+    },
+    {
+      "cpf": "345.678.910.11",
+      "nome": "Pedro",
+      "email": "pedromarins@hotmail.com",
+      "senha": "098765",
+      "perfil": "Cliente",
+      "id": "6bc8RMa"
+    },
+    {
+      "cpf": "123.123.123-05",
+      "nome": "Ana",
+      "email": "ana@gmail.com",
+      "senha": "098765",
+      "perfil": "Cliente",
+      "id": "3JGWM6k"
     }
   ]
 }
